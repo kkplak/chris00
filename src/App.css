@@ -1,0 +1,666 @@
+:root {
+  --h1: #dadada;
+  --h2: #dddddd;
+  --text-color: #ffffff;
+  --nav-text-color: #ffffff;
+  --background-color: #0e0e0e;
+  --box-color: #ffffff;
+  --box-text: #b3b3b3;
+  --button-color: #b9b9b9;
+  --button-text: #ffffff;
+
+  /* Typography */
+  --font-base: 1rem;
+  --fs-small: 0.85rem;
+  --fs-medium: 1rem;
+  --fs-large: 1.15rem;
+  --fs-h1: 2.8rem; /* Larger, bolder headings */
+  --fs-h2: 2.2rem;
+  --fs-h3: 1.6rem;
+  --fs-toggle-title: 1.125rem;
+  --fs-toggle-content: 1rem;
+
+  /* Font Family */
+  --font-primary: "Montserrat", sans-serif; /* Modern, bold, professional */
+  --font-secondary: "Lato", sans-serif; /* Clean and minimalistic */
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2.5rem;
+  --spacing-xxl: 4rem;
+
+  /* Border Radius */
+  --br-container: 0.5rem; /* Softer rounded corners */
+  --br-element: 0.35rem;
+  --br-small: 0.25rem;
+
+  /* Shadows */
+  --shadow-light: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  /* Transitions */
+  --transition-fast: 0.25s ease-in-out;
+  --transition-slow: 1s ease-in-out;
+}
+
+/*========================================
+  Global Layout & Utilities
+========================================*/
+html {
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* font-family: 'Open Sans', sans-serif;  Uncomment or change as needed */
+}
+
+.nav-bar {
+  background-color: #5eb100;
+  margin: 0.8rem 2rem;
+  /* border-radius: 15px; */
+}
+.text-container p {
+  color: var(--text-color);
+}
+/* Utility Classes */
+.hide,
+.show {
+  transition: opacity var(--transition-fast) ease-out;
+}
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/*========================================
+  Containers & Sections
+========================================*/
+.homepage {
+  width: 100%;
+}
+.people-container {
+  width: 100%;
+  margin: 8rem 0 10rem;
+  gap: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.ioannis-container,
+.lukasz-container {
+  width: 30rem;
+  height: 30rem;
+}
+.ioannis-container img,
+.lukasz-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.wrapper {
+  height: max-content;
+}
+.wrapper p {
+  background-color: white;
+
+  padding: 3rem 3rem;
+  margin: 2rem;
+  margin-bottom: 8rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft, clean shadow */
+  border: 1px solid rgba(0, 0, 0, 0.176); /* Very subtle border */
+  text-align: center;
+  justify-self: center;
+}
+/* Standard container with a subtle overlay effect */
+.container,
+.container2,
+.container-home {
+  /* background: rgba(0, 0, 0, 0.08); */
+  border-radius: var(--br-container);
+  margin: auto;
+  padding: 6% 7% 0;
+  color: var(--box-text);
+}
+.container {
+  text-align: center;
+}
+.container2 {
+  text-align: left;
+}
+.container-home {
+  text-align: center;
+}
+.contact-box-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+.contact-box {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft, clean shadow */
+  border: 1px solid rgba(0, 0, 0, 0.176); /* Very subtle border */
+  text-align: left;
+}
+.contact-box h2 {
+  white-space: nowrap;
+}
+.newcommer {
+  text-align: left;
+}
+.newcommer ul {
+  list-style-type: none;
+}
+.small-list {
+  list-style: disc outside !important;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+.small-list li p {
+  margin: 0;
+
+  line-height: 0.9;
+  padding: 0;
+}
+.small-text {
+  margin: 0 !important;
+  padding-left: 40px;
+}
+.small-text:first-of-type {
+  padding-left: 20px;
+}
+.info-list {
+  margin-bottom: 0;
+}
+
+.text-center {
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.text-center .bgcolor {
+  background-color: #00073e;
+  color: white;
+  max-width: max-content;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+}
+.text-trick {
+  display: flex;
+}
+
+/*========================================
+  Homepage & Hero Section
+========================================*/
+.icon {
+  width: 28px;
+}
+
+.home {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  justify-content: space-between;
+  height: 60vh;
+  color: var(--h1);
+  background: transparent;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  backdrop-filter: blur(2px);
+}
+.insurances-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: var(--spacing-xxl);
+  color: var(--text-color);
+}
+
+.text-container {
+  z-index: 11;
+  width: 100%;
+  text-align: left;
+}
+.text-container a {
+  display: flex;
+  width: max-content;
+}
+.text-container h1 {
+  line-height: 3.2rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.image-container {
+  z-index: 11;
+  display: flex;
+  align-items: start;
+  width: 60%;
+  max-width: 500px;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  padding-top: 3rem;
+}
+
+/*========================================
+  Navigation
+========================================*/
+.nar-bar {
+  backdrop-filter: blur(2px);
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 2rem;
+}
+
+.nav-phone-numbers {
+  color: var(--nav-text-color);
+  font-size: var(--fs-small);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.nav-phone-numbers p {
+  margin: 0;
+  font-weight: 500;
+  text-decoration: none;
+}
+.nav-phone-numbers a {
+  font-size: 0.93rem;
+  text-decoration: none;
+}
+.phone-line {
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  margin-right: 1.25rem;
+}
+nav ul li a {
+  color: var(--nav-text-color);
+  text-decoration: none;
+  font-weight: 600;
+  z-index: 1111111;
+}
+nav ul li a:hover {
+  color: rgba(243, 243, 243, 0.8);
+}
+
+.nav-center {
+  position: absolute;
+  left: 45%;
+}
+
+/*========================================
+  Headings & Text
+========================================*/
+h1 {
+  font-size: var(--fs-h1);
+}
+.smaller-p {
+  font-size: 0.8rem;
+}
+
+/*========================================
+  Language Switcher
+========================================*/
+.language-switcher {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+}
+.language-icon {
+  width: var(--fs-lang-icon);
+  height: var(--fs-lang-icon);
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+.language-icon.active,
+.language-icon:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/*========================================
+  Home Buttons & Call-to-Action
+========================================*/
+
+/* MaintenanceNotice.css */
+.container-maintenance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.notice {
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.notice h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.notice p {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #666;
+}
+
+.home-buttons-container {
+  width: 100%;
+}
+.button-link {
+  text-decoration: none;
+}
+.welcome-button {
+  margin-top: var(--spacing-lg);
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  gap: 0.6rem;
+  border: none;
+  background: var(--button-color);
+  border-radius: var(--br-container);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+.welcome-button:hover {
+  background: white;
+  border-bottom: 2px solid var(--button-color);
+}
+.lable {
+  color: var(--button-text);
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.welcome-button:hover .lable {
+  color: var(--h1);
+}
+
+@keyframes msg {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  15% {
+    transform: translateX(1px);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  45% {
+    transform: translateY(1px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: scale(1);
+  }
+  90% {
+    transform: translateX(-1px);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /*------------------------------------------------
+    Adjust Root Variables (Optional: Fine-Tune Typography)
+  ------------------------------------------------*/
+  :root {
+    /* Reduce heading sizes for smaller screens */
+    --fs-h1: 2rem;
+    --fs-h2: 1.6rem;
+    --fs-h3: 1.3rem;
+
+    /* Optional: Adjust spacing variables if needed */
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.5rem;
+    --spacing-xxl: 2rem;
+  }
+
+  /*------------------------------------------------
+    General Layout Adjustments
+  ------------------------------------------------*/
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    /* Ensure full-width usage on mobile */
+    width: 100%;
+  }
+
+  /*------------------------------------------------
+    Navigation & Header Adjustments
+  ------------------------------------------------*/
+  .nav-bar {
+    margin: 0.5rem 1rem;
+    /* border-radius: 15px; */
+  }
+  .nav-left a {
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+  .nav-right {
+    display: none;
+  }
+  nav ul {
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .nav-phone-numbers a {
+    font-size: 0.65rem;
+  }
+  .phone-line p {
+    font-size: 0.65rem;
+  }
+  .nav-phone-numbers {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .nav-center {
+    position: static;
+    margin: 0.5rem 0;
+  }
+
+  /*------------------------------------------------
+    Homepage / Hero Section Adjustments
+  ------------------------------------------------*/
+  .home {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    align-items: center;
+  }
+  .homepage {
+    overflow: hidden;
+  }
+  .text-container {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+  }
+  .text-container h1 {
+    text-align: left;
+  }
+  .image-container {
+    width: 50%;
+    padding-top: 0rem;
+    margin: 0;
+    align-self: flex-end;
+  }
+  .image-container img {
+    padding-top: 3rem;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  .button-box {
+    min-width: 250px;
+  }
+  /*------------------------------------------------
+    People / Image Containers Adjustments
+  ------------------------------------------------*/
+  .people-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 0;
+    gap: 2rem;
+  }
+
+  .ioannis-container,
+  .lukasz-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .ioannis-container img,
+  .lukasz-container img {
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /*------------------------------------------------
+    Content and Wrapper Adjustments
+  ------------------------------------------------*/
+  .wrapper p {
+    margin: 0;
+    padding: 1.8rem 1.2rem;
+    font-size: var(--fs-medium);
+    border-radius: 10px;
+    margin-bottom: 4rem;
+  }
+
+  .container,
+  .container2,
+  .container-home {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /*------------------------------------------------
+    Contact Box Adjustments
+  ------------------------------------------------*/
+  .contact-box-container {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .contact-box {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /*------------------------------------------------
+    Home Buttons & Call-to-Action Adjustments
+  ------------------------------------------------*/
+  .welcome-button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-top: var(--spacing-md);
+  }
+
+  /*------------------------------------------------
+    Miscellaneous
+  ------------------------------------------------*/
+  /* Center links and text in small screens */
+  .text-center {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .insurance-page.container {
+    margin: 1rem;
+    padding: 0;
+  }
+  .contact {
+    padding: 1rem;
+    margin: 0 1rem;
+  }
+  .button-box-container {
+    margin: 4rem 2rem;
+  }
+  .contact-text {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+  .contact-text h3 {
+    padding: 0;
+  }
+  .contact-people {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .contact-people a {
+    font-size: 0.7rem;
+  }
+  .contact-people p {
+    font-size: 0.7rem;
+  }
+  .people-name {
+    font-size: 0.9rem !important;
+  }
+  .contact-people-en {
+    justify-content: space-between;
+  }
+}

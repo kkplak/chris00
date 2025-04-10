@@ -1,0 +1,46 @@
+{
+  "GENERAL": {
+    "maintenanceh1": "🚧 Strona w budowie 🚧",
+    "maintenancep": "Pracujemy nad ulepszeniem serwisu motocyklowego. Wróć do nas później!",
+    "contact": "Kontakt",
+    "home": "Strona główna",
+    "introduction": "1. Kontakt",
+    "contactUs": "Skontaktuj się z nami",
+    "contactUsP": "Prosimy o podanie danych kontaktowych, a my skontaktujemy się w sprawie motocykli.",
+    "introductionP": "Podaj swoje dane, a odezwiemy się w sprawie motocykla.",
+    "meeting": "2. Spotkanie",
+    "meetingP": "Umówimy się na spotkanie lub rozmowę telefoniczną, aby pomóc Ci znaleźć idealny motocykl dopasowany do Twoich potrzeb i budżetu.",
+    "ongoingSupport": "3. Ciągłe wsparcie",
+    "ongoingSupportP": "Współpraca z nami to gwarancja wsparcia także po zakupie motocykla.",
+    "homeH1": "Chris00",
+    "homeP": "po polsku",
+    "homeP2": "Zadowoleni motocykliści to najlepszy dowód naszej skuteczności.",
+    "homeButton": "O nas",
+
+    "lukasz": "Łukasz",
+    "lukaszBergel": "Łukasz Bergel",
+    "lukaszPhone": "+41 79 482 38 96",
+    "lukaszMail": "lukasz@protegos.ch",
+    "ioannis": "Ioannis",
+    "ioannisSarafidis": "Ioannis Sarafidis",
+    "ioannisPhone": "+41 77 483 83 22",
+    "ioannisMail": "ioannis@protegos.ch",
+    "aboutUs": "O nas",
+    "aboutUsContent": "Jesteśmy pasjonatami motocykli i pomagamy w wyborze, zakupie oraz ubezpieczeniu jednośladów w Szwajcarii. Poznaj nasz zespół:",
+    "aboutLukasz": "Łukasz to prawdziwy entuzjasta motocykli z ponad dziesięcioletnim doświadczeniem w doradztwie. Jego znajomość rynku motocyklowego i zaangażowanie w pomoc klientom sprawiają, że potrafi doradzić zarówno początkującym, jak i doświadczonym motocyklistom. Łukasz przykłada ogromną wagę do potrzeb klienta i dobiera motocykle oraz rozwiązania ubezpieczeniowe dopasowane do stylu jazdy i oczekiwań. Biegle posługuje się językiem polskim, niemieckim i angielskim, co umożliwia mu współpracę z osobami z różnych środowisk. Jeśli szukasz osoby, która doradzi Ci w sprawie motocykla z pasją i zaangażowaniem — to Łukasz.",
+    "aboutIoannis": "Ioannis to specjalista od motocykli i ubezpieczeń, znany z indywidualnego podejścia do klientów. Jego doświadczenie w doradztwie motocyklowym oraz znajomość rynku pozwala na dobór najlepszych maszyn i opcji finansowania. Ioannis dba o każdy szczegół, od pierwszego kontaktu po finalizację zakupu. Obsługuje klientów po grecku, niemiecku i angielsku, co czyni go wszechstronnym doradcą. Niezależnie od tego, czy interesują Cię motocykle miejskie, sportowe czy turystyczne — Ioannis pomoże Ci znaleźć idealny model i zadba o resztę formalności."
+  },
+  "CONTACT": {
+    "formThanks": "Dziękujemy! Wkrótce się z Tobą skontaktujemy.",
+    "formFooter": "Dziękujemy za zaufanie!",
+    "formLanguage": "Wybierz preferowany język",
+    "formEnglish": "Angielski",
+    "formGerman": "Niemiecki",
+    "formPolish": "Polski",
+    "formGreek": "Grecki",
+    "formNumber": "Numer telefonu",
+    "formName": "Imię",
+    "formEmail": "Adres e-mail",
+    "formSubmit": "Wyślij"
+  }
+}

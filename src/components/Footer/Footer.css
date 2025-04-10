@@ -1,0 +1,72 @@
+/*========================================
+  Footer Component Styles
+========================================*/
+:root {
+  --footer-overlay: rgb(14, 14, 14);
+  --footer-text-color: rgb(248, 248, 248);
+  --footer-padding: 0.5%;
+  --footer-z-index: 16;
+  --footer-text-z-index: 15;
+  --footer-gap: 5rem;
+  --footer-font-size: var(--fs-medium);
+  --footer-name-font-size: 1.2rem;
+  --footer-name-padding: 0.5rem;
+}
+
+.layout {
+  position: relative;
+}
+
+.contact {
+  position: relative;
+  display: flex;
+  margin: 0rem 2rem;
+
+  padding: var(--footer-padding);
+  color: var(--footer-text-color);
+  z-index: var(--footer-z-index);
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--footer-overlay);
+  border-radius: 15px 15px 0 0;
+}
+
+.contact-text {
+  z-index: var(--footer-text-z-index);
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-text h3 {
+  text-align: left;
+  margin: 0;
+  padding-left: 2rem;
+}
+.contact-text p {
+  margin: 0;
+}
+
+.contact-people {
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 2rem;
+}
+.contact-people-en {
+  display: flex;
+  gap: 2rem;
+}
+.contact-people a {
+  text-decoration: none;
+}
+.people-name {
+  font-size: var(--footer-name-font-size);
+  padding-bottom: var(--footer-name-padding);
+}

@@ -1,0 +1,36 @@
+/* Add this to your CSS file (e.g., App.css or LogoLine.css) */
+.logo-line {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  margin: 0 2rem 3rem;
+  background-color: rgba(41, 41, 41, 0.12);
+  border-radius: var(--br-element);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.175);
+}
+@media only screen and (max-width: 900px) {
+  .logo-line {
+    border-radius: 0;
+    padding: 1rem ;
+    margin: 0 0 2rem 0;
+  }
+}
+.logo-image {
+  max-width: 60px;
+  height: auto;
+  display: block;
+}
+/* .logo-image:nth-child(7), .logo-line:nth-child(7) img {
+  max-width: 100px;
+}
+.logo-image:nth-child(8), .static-item:nth-child(7) {
+  max-width: 100px;
+} */
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+

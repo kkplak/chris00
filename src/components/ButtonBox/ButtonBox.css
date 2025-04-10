@@ -1,0 +1,62 @@
+/*========================================
+  Button Box Component Styles
+========================================*/
+.button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.176);  /* Very subtle border */
+  border-radius: var(--br-element);
+  padding: 20px;  /* Increased padding for spaciousness */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft, clean shadow */
+  transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;  /* Smooth transitions */
+  background-color: rgb(255, 255, 255);  /* Very light background to stand out subtly */
+  margin: 15px;  /* Slightly larger margin for better spacing */
+  width: 20%;
+  min-width: 200px;
+  color: #333;  /* Dark text for readability */
+}
+.button-box:last-of-type {
+border-bottom: 2px solid rgb(220, 0, 0);
+}
+.button-box:hover {
+  transform: translateY(-2px);  /* Slight hover lift for a professional feel */
+  background-color: rgba(255, 255, 255, 1);  /* Subtle change in background color */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Slightly stronger shadow on hover */
+}
+
+
+/*----------------------------------------
+  Child Elements
+----------------------------------------*/
+.button-box-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: var(--spacing-sm);
+}
+.button-box-title {
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+  color: var(--box-text);
+}
+.button-box-description {
+  font-size: 0.875rem;
+  color: var(--box-text);
+}
+
+/*----------------------------------------
+  Layout Wrappers
+----------------------------------------*/
+.button-box-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem;
+}
+.button-box-container {
+  margin: 7rem 3rem;
+}
