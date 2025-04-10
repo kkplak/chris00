@@ -103,7 +103,7 @@ const NavBar = () => {
   const borderR = scrollPosition < 10 ? "15px" : "0 0 15px 15px";
   const navbarStyle = {
     // backgroundColor: scrollPosition > 20 ? "rgba(0, 0, 0, 0.7)" : "rgba(0, 0, 0, 0.4)",
-    padding: padding,
+    padding: "0.5rem 0",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
@@ -112,7 +112,7 @@ const NavBar = () => {
     zIndex: 1000,
     transition: "0.3s ease-out",
     backdropFilter: "blur(3px)",
-    borderRadius: borderR,
+    borderRadius: 0,
   };
 
   return (
@@ -123,7 +123,7 @@ const NavBar = () => {
         windowWidth={windowWidth}
       />
       <NavCenter scrollPosition={scrollPosition} windowWidth={windowWidth} />
-      <NavRight scrollPosition={scrollPosition} windowWidth={windowWidth} />
+      {/* <NavRight scrollPosition={scrollPosition} windowWidth={windowWidth} /> */}
     </nav>
   );
 };

@@ -30,69 +30,47 @@ const Home: React.FC = () => {
 
   return (
     <div className='homepage'>
-      <div className='container-home home'>
+      <div
+        className='container-home home'
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL}/media/bg7.png)`,
+          backgroundSize: "cover",
+        }}
+      >
         <div className='text-container'>
+          <p>{t("GENERAL.homeP2")}</p>
           <h1>{t("GENERAL.homeH1")}</h1>
           <p>{t("GENERAL.homeP")}</p>
-          {/* <p>{t("GENERAL.homeP2")}</p> */}
-          {/* <Link to={`/${lang}/contact`} className='button-link'>
+          <p>{t("GENERAL.homeP2")}</p>
+          <Link to={`/${lang}/contact`} className='button-link'>
             <button className='welcome-button'>
               <span className='lable'>{t("GENERAL.contactUs")}</span>
             </button>
-          </Link> */}
+          </Link>
         </div>
-        {/* <div className="image-container">
-       <img src="/media/hero3.png"></img>
+        {/* <div className='image-container'>
+          <img src='/media/chris00png.png'></img>
         </div> */}
       </div>
       {/* <LogoLine logos={logos} /> */}
-      {/* <div className='button-box-container'>
-   
+      <div className='button-box-container'>
         <div
           className={`button-box-row  ${
             currentLanguage === "de" ? "german-container" : ""
           }`}
         >
-          <ButtonBox
-            icon='/media/health-icon.png'
-            titleKey='GENERAL.healthInsurance'
-            descriptionKey='GENERAL.healthInsuranceDescription'
-            link={`/${lang}/health-insurance`}
-          />
-          <ButtonBox
-            icon='/media/life-icon.png'
-            titleKey='GENERAL.lifeInsurance'
-            descriptionKey='GENERAL.lifeInsuranceDescription'
-            link={`/${lang}/life-insurance`}
-          />
-          <ButtonBox
-            icon='/media/car-icon.png'
-            titleKey='GENERAL.carInsurance'
-            descriptionKey='GENERAL.carInsuranceDescription'
-            link={`/${lang}/car-insurance`}
-          />
-
-          <ButtonBox
-            icon='/media/law-icon.png'
-            titleKey='GENERAL.lawProtection'
-            descriptionKey='GENERAL.lawProtectionDescription'
-            link={`/${lang}/law-protection`}
-          />
-          <ButtonBox
-            icon='/media/house-icon.png'
-            titleKey='GENERAL.houseInsurance'
-            descriptionKey='GENERAL.houseInsuranceDescription'
-            link={`/${lang}/house-insurance`}
-          />
-
-          <ButtonBox
-            icon='/media/swiss-icon.png'
-            titleKey='GENERAL.swissInsurance'
-            descriptionKey='GENERAL.swissInsuranceDescription'
-            link={`/${lang}/swiss-insurance`}
-          />
+          <p>{t("GENERAL.homeP2")}</p>
+          <h1>{t("GENERAL.homeH1")}</h1>
+          <p>{t("GENERAL.homeP")}</p>
+          <p>{t("GENERAL.homeP2")}</p> <p>{t("GENERAL.homeP2")}</p>
+          <h1>{t("GENERAL.homeH1")}</h1>
+          <p>{t("GENERAL.homeP")}</p>
+          <p>{t("GENERAL.homeP2")}</p> <p>{t("GENERAL.homeP2")}</p>
+          <h1>{t("GENERAL.homeH1")}</h1>
+          <p>{t("GENERAL.homeP")}</p>
+          <p>{t("GENERAL.homeP2")}</p>
         </div>
-      </div> */}
+      </div>
       {/* <LogoLine logos={logos} mobileBreakpoint={900} marqueeSpeed={30} /> */}
     </div>
   );

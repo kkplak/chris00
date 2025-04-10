@@ -6,8 +6,8 @@
   --background-color: #0e0e0e;
   --box-color: #ffffff;
   --box-text: #b3b3b3;
-  --button-color: #b9b9b9;
-  --button-text: #ffffff;
+  --button-color: #84d100;
+  --button-text: #000000;
 
   /* Typography */
   --font-base: 1rem;
@@ -65,8 +65,8 @@ body {
 }
 
 .nav-bar {
-  background-color: #5eb100;
-  margin: 0.8rem 2rem;
+  background-color: #00000029;
+  /* margin: 0.8rem 2rem; */
   /* border-radius: 15px; */
 }
 .text-container p {
@@ -97,6 +97,7 @@ a {
 .homepage {
   width: 100%;
 }
+
 .people-container {
   width: 100%;
   margin: 8rem 0 10rem;
@@ -224,7 +225,7 @@ a {
   position: relative;
   z-index: 10;
   justify-content: space-between;
-  height: 60vh;
+  height: 91vh;
   color: var(--h1);
   background: transparent;
 }
@@ -236,7 +237,7 @@ a {
   width: 100%;
   height: 100%;
   /* background-color: rgba(0, 0, 0, 0.2); */
-  backdrop-filter: blur(2px);
+  /* backdrop-filter: blur(2px); */
 }
 .insurances-header {
   width: 100%;
@@ -328,7 +329,7 @@ nav ul li a:hover {
 
 .nav-center {
   position: absolute;
-  left: 45%;
+  right: 2%;
 }
 
 /*========================================
@@ -487,7 +488,7 @@ h1 {
     Navigation & Header Adjustments
   ------------------------------------------------*/
   .nav-bar {
-    margin: 0.5rem 1rem;
+    /* margin: 0.5rem 1rem; */
     /* border-radius: 15px; */
   }
   .nav-left a {
@@ -514,7 +515,6 @@ h1 {
   }
 
   .nav-center {
-    position: static;
     margin: 0.5rem 0;
   }
 
